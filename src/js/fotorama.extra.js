@@ -18,14 +18,6 @@
 		)
 		.fotorama();
 					
-		function typing (target, message, index = 0) {
-			message = message || $(target).data('text');
-			if (index < message.length) {
-				$(target).append(message[index++]); 
-				setTimeout(function () { typing(target, message, index); }, 200);
-			}
-		}
-					
 		function triggerAnimate(ele) {
 			var self = $(ele);
 			var animate = $(self).data('animate');
